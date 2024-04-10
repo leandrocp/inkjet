@@ -331,6 +331,13 @@ repo = "https://github.com/nix-community/tree-sitter-nix"
 hash = "66e3e9c"
 
 [[languages]]
+name = "objective-c"
+repo = "https://github.com/tree-sitter-grammars/tree-sitter-objc"
+hash = "62e61b6"
+aliases = ["objc"]
+helix_override = true
+
+[[languages]]
 name = "ocaml"
 repo = "https://github.com/tree-sitter/tree-sitter-ocaml"
 hash = "694c577"

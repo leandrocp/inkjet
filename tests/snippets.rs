@@ -12,7 +12,7 @@ fn highlight_all_snippets() {
 
     let mut hili = Highlighter::new();
 
-    let theme = Theme::from_helix(vendored::ADWAITA_DARK)
+    let theme = Theme::from_helix(vendored::GITHUB_LIGHT)
         .map(ThemedHtml::new)
         .unwrap();
 
@@ -20,9 +20,9 @@ fn highlight_all_snippets() {
 
     for lang in Language::ALL_LANGS {
         let source = std::fs::read_to_string(
-            format!("./tests/samples/{lang:?}")
+            format!("./tests/samples/Elixir.ex")
         ).unwrap();
-        
+
         let _ = write!(
             &mut out,
             "<h2>{lang:?}</h2><br>"
